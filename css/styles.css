@@ -1520,6 +1520,16 @@ input[type=text], select, textarea {
     background-color: #fff;
     flex-wrap: wrap;
 }
+
+.resume-experience__wrapper{
+    display: block;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
    
 .container{
    margin: 10px;
@@ -1548,17 +1558,62 @@ input[type=text], select, textarea {
 
 .container ul{
   list-style-type: none;
+  display: block;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
 
 }
 
 .container ul li{
-    width: 55%;
+    width: 80%;
+    display: block;
    height: auto;
+   align-items: center;
    padding: 15px 20px;
    background-color: #fff;
    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.384);
    border-radius: 10px;
-   margin-bottom: 30px;
+   margin-left: 70px;
+   /* margin-right: -50%; */
+   z-index: 99;
+   position: relative;
+   flex-wrap: wrap;
+
+}
+
+ /* .container ul li:nth-child(odd){
+    width: 80%;
+    display: block;
+   height: auto;
+   align-items: center;
+   padding: 15px 20px;
+   background-color: #fff;
+   box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.384);
+   border-radius: 10px;
+   margin-left: -40%;
+   margin-right: 90%;
+   z-index: 99;
+   position: relative;
+   flex-wrap: wrap;
+}  */
+
+
+.container ul li:nth-child(even){
+    /* width: 80%; */
+    display: block;
+   height: auto;
+   align-items: center;
+   padding: 25px ;
+   background-color: #fff;
+   box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.384);
+   border-radius: 10px;
+   margin-left: -65%;
+   margin-right: 32.5%;
    z-index: 99;
    position: relative;
    flex-wrap: wrap;
@@ -1588,8 +1643,9 @@ input[type=text], select, textarea {
    background-color: orange;
    border-radius:50%;
    position: absolute;
-   top: 0;
+   /* top: 0;
    left: 0;
+   justify-content: flex-start; */
    /* display: none; */
 }
 
@@ -1608,14 +1664,18 @@ input[type=text], select, textarea {
 
 
 .container ul li:nth-child(odd) .circle{
-   right: -70px;
-   transform: translate(273px, -50%);
+    /* display: none; */
+   /* right: -70px; */
+   transform: translate(-50%, -50%);
    /* display: none; */
 }
 
 .container ul li:nth-child(even) .circle{
-   left: -30px;
-   transform: translate(-50%, -50%);
+    /* display: none; */
+   /* left: -30px; */
+   /* transform: translate(-40px, -50%); */
+   left: 0;
+   top: 0;
    /* display: none; */
 }
 
